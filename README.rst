@@ -17,10 +17,10 @@ In order to use to use this plugin, you have to edit(*) or create(+) the followi
               └── mytheme
                     ├── templates
                     │      ├── base.html *
-                    │      └── amtag_cloud.html *
+                    │      └── amtag_cloud.html +
                     └── static
-                          └── css
-                               └── style.css *
+                          └── js
+                               └── amtag_cloud.js +
 
 In **pelicanconf.py** you have to activate the plugin::
 
@@ -46,6 +46,7 @@ The default theme does not include a tag cloud, but it is pretty easy to add one
 First you need to place **amtag_cloud.js** into your **static** directory. 
 
 Then place following code into head of our **base.html**::
+
   <script src="https://www.amcharts.com/lib/4/core.js"></script>
   <script src="https://www.amcharts.com/lib/4/charts.js"></script>
   <script src="https://www.amcharts.com/lib/4/plugins/wordCloud.js"></script>
